@@ -1,0 +1,6 @@
+Van toc toi da cua Anh hung: 5
+So ngoi lang bi tan cong: 14
+Toa do:    -27 -25 -23 -17 -15 -12   0   1   2  10  14  15  21  29  30
+Thoi diem:  11   3   7  24  12  18  AH  10  12  16   2  30  28  17  30
+DP:          2   X   1   4   2   3   0   1   2   3   X   5   4   2   5
+So luong toi da cac ngoi nha co the cuu: 5
