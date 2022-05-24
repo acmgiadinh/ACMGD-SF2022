@@ -1,6 +1,6 @@
 /**
  * This code either generates number of villages, the coordinates of each and the corresponding time of attacks
- * or solve an instance from a file.
+ * or solve an instance of the problem.
  * 
  * Author: Khau Dang Nhat Minh
  **/
