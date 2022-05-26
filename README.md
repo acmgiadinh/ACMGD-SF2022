@@ -43,11 +43,14 @@ Now, how do we calculate these $F$ values? Whenever we calculate $F_H$ of a hous
 
 At the end, you could choose a house $H$ with the largest $F_H$ and that house will be the last house you rescue. In order to know exactly how the journey looks like, you could trace back from this house $H$ to the house $H'$ from which $F_H$ was calculated and repeat the process until you reach the current standing.
 
-With this algorithm, the solving performance will be much more consistent and the optimal solution will be quickly come up. However in practice, if the number of houses is not very huge, the exceptional heuristically-optimising and information-caching function of our brain when doing the greedy approach would usually be more effective. Therefore, you should spare this approach for larger data or when you want to make sure of the optimal solution.
+The act of breaking the problem down and utilising the optimal solution of subproblems as above is called **dynamic programming**. With this algorithm, the solving performance will be much more consistent and the optimal solution will be quickly come up. However in practice, when the number of houses is not very huge, the exceptional heuristically-optimising and information-caching function of our brain when doing the greedy approach would usually be more effective. Therefore, you should spare this approach for larger data or when you want to make sure of the optimal solution.
 
 ### Data Structure Approach for Big Data
 
 ### Real-World Applications
+Instead of considering the problem as of "the houses at some positions on the road" and "being attacked at some time", we could think about it as of some events happenning at some specific positions and some specific points in time. The problem will then be how to participate at the maximum number of events but not to exceed some maximum speed value when moving.
+
+
 
 ## References
 - [Problem F. Tourist in the contest All-Ukrainian School Olympiad in Informatics](https://codeforces.com/contest/76/problem/F)
