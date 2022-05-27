@@ -47,10 +47,19 @@ The act of breaking the problem down and utilising the optimal solution of subpr
 
 ### Data Structure Approach for Big Data
 
-### Real-World Applications
-Instead of considering the problem as of "the houses at some positions on the road" and "being attacked at some time", we could think about it as of some events happenning at some specific positions and some specific points in time. The problem will then be how to participate at the maximum number of events but not to exceed some maximum speed value when moving.
+### Real-World Application
+Instead of considering the problem as of "the houses at some positions on the road" and "being attacked at some points in time", we could think about it as of some events happening at some specific positions and some specific points in time. The problem will then be how to participate at the maximum number of events but not to exceed some maximum speed value when moving from one event to another.
+
+Let's say you are joining a fair, e.g. Science Fair. Every stall in this fair has a special minigame that only happens once and you know exactly when these games start. So, which stalls will you choose to come so that you could play as many special minigames as possible?
+
+Of course this problem is only a simple version so it might not be very pratical. In a real fair, a special minigame or event could occur at some points in time, rarely but not only once, and you may have to stay for a while. This version sounds a little bit more difficult and it really is. Hence, let's take a look at another application that also often takes place very close to you, but you usually do not notice it since you are not the one in charge.
+
+Let's imagine that you are buying some goods on an e-commerce platform such as Shopee or Lazada, expecting your order will be shipped to your place at the exact moment you want, and there are thousands of people like you, doing the same thing. Now the platform wants to set up a journey so that one driver can deliver as many orders as possible. Sounds familiar yet? Moreover, this problem also leads to another problem that is how to minimise the number of drivers to deliver all of the orders.
+
+### Our Mission
 
 
+Many everyday tasks of big companies in the world are just these easy-to-understand problems like this.
 
 ## References
 - [Problem F. Tourist in the contest All-Ukrainian School Olympiad in Informatics](https://codeforces.com/contest/76/problem/F)
