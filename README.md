@@ -71,7 +71,9 @@ Let $X_H$, $T_H$ and $V$ be the coordinate, the attacked time of a house $H$ and
 2. $$\frac{|X_A - X_B|}{T_B - T_A} \le V$$
 
 The second condition can be inferred into:
-$$\frac{|X_A - X_B|}{T_B - T_A} \le V \\ \Leftrightarrow |X_A - X_B| \le V(T_B - T_A) \\ \Leftrightarrow \begin{cases} - X_A + VT_A \le - X_B + VT_B & \text{if } X_A \le X_B \\ X_A + VT_A \le X_B + VT_B & \text{if } X_A > X_B \end{cases} $$
+$$\frac{|X_A - X_B|}{T_B - T_A} \le V \Leftrightarrow |X_A - X_B| \le V(T_B - T_A)$$
+$$\Leftrightarrow - X_A + VT_A \le - X_B + VT_B \text{ if } X_A \le X_B$$
+$$ \textrm{and } X_A + VT_A \le X_B + VT_B \text{ if } X_A > X_B$$
 
 Let's take a look at the first case in the conditional inequations above, we have if $X_A \le X_B$ and $- X_A + VT_A \le - X_B + VT_B$ both hold, $VT_A \le VT_B$ must also hold. This claim is easy to prove so we will let our readers have fun with it. The interesting part here is that if both $X_A \le X_B$ and $VT_A \le VT_B$ hold then the second case also holds! With similiar approach, we can infer the same thing from the second case to the first, vice versa.
 
