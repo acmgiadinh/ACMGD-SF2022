@@ -3,10 +3,11 @@
 In 20/05/2022, we – ACM Gia Định Team – had a chance to set up a stall at the Science Fair hosted by Gia Dinh High School. At this event, we proudly brought to the fair's participants a nice problem where everyone can interact and try a variety of approaches, as well as being able to relate to many interesting practice problem.
 
 ## To-do
-- [ ] Update more event images
-- [ ] Update environment setup
-- [ ] Finish current left parts with only title
-- [ ] Update pseudo-code for each approach
+- Update more event images
+- Update environment setup
+- Finish current left parts with only title
+- Update pseudo-code for each approach
+- Refactor code for better view on purposes
 
 ## Problem
 A group of Interworld Heroes are making their way through a village. Suddenly, afflatus tells them something is coming. Listening carefully to the portent, the Heroes find out that devils are coming to the houses on the road they are standing. They also know exactly which time the devils approach for each of the houses. The problem is the Heroes cannot move quick enough to rescue all the houses and they must be together for maximum strength. To be precise, there is a maximum speed that they cannot exceed. Therefore, they have to set a journey to rescue as many houses as possible.
@@ -57,9 +58,11 @@ Of course this problem is only a simple version so it might not be very pratical
 Let's imagine that you are buying some goods on an e-commerce platform such as Shopee or Lazada, expecting your order will be shipped to your place at the exact moment you want, and there are thousands of people like you, doing the same thing. Now the platform wants to set up a journey so that one driver can deliver as many orders as possible. Sounds familiar yet? Moreover, this problem also leads to another problem that is how to minimise the number of drivers to deliver all of the orders.
 
 ### Our Mission
+This problem is just one among many daily life topics. Most of the time, we only try to solve this problem heuristically by some similiar approaches such as the greedy one we mentioned above. The real issue here is that this approach is very instinctive and not too much work is put into this. Hence, we often do not try to systematise the problem, not to mention the solution, really well. That is the reason why when we approach a problem with much bigger data as in Science Fair, we would feel a little bit panic and do not know where to start.
 
+For those who care about the data and information related fields, many of big companies' everyday tasks are just these easy-to-understand problems like this. However, "easy-to-understand" does not mean "easy-to-solve". But first, let's just start from understanding the problem and what we are already able to do.
 
-Many everyday tasks of big companies in the world are just these easy-to-understand problems like this.
+In ACM Gia Định, we understand the struggles you faced when first approach this field. And we are here to help. Let us go along with you from the very beginning steps and hand you the knowledge of information in the most intuitive and interactive way.
 
 ## References
 - [Problem F. Tourist in the contest All-Ukrainian School Olympiad in Informatics](https://codeforces.com/contest/76/problem/F)
