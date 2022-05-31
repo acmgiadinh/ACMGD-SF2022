@@ -32,7 +32,7 @@ Let's say a journey of rescuing houses is a list of houses that we will come and
 
 It is clear that we should not put a house with a very late attacked time at the beginning since that means we would abandon all the houses with earlier attacked time. Hence, we should look at the earliest next houses being attacked. Then we could try moving to one of them and repeating the process. To make sure that our solution is optimal, we could get back to some steps, try another house in the next move and continue the same as what we did.
 
-```
+``
 try(house H):
     best_result = 1 if H is not the current standing, else 0
     for each other house K which we can move to from H:
@@ -40,7 +40,7 @@ try(house H):
     return best_result
 
 the result is try(current standing)
-```
+``
 
 We always tell our players to try this method multiple times without hesitating. This method will help you understand the problem and get familiar with the set of data to be processed. Moreover, one of the wonderful things about our human-being brains is that it will magically do some heuristic optimisations and cache some useful information for better performance every time we try solving the problem. So the more you try it, the faster and easier you get to solve it.
 
@@ -53,17 +53,17 @@ Now, how do we calculate these $F$ values? Whenever we calculate $F_H$ of a hous
 
 At the end, you could choose a house $H$ with the largest $F_H$ and that house will be the last house you rescue. In order to know exactly how the journey looks like, you could trace back from this house $H$ to the house $H'$ from which $F_H$ was calculated and repeat the process until you reach the current standing.
 
-```
+``
 sort houses by attacked time
 max_F = 0
-denote current standing as 'rescued' and F_cur = 0
+denote current standing as 'rescued' and F[current standing] = 0
 for each house H from earliest to latest attacked one:
     for each rescued house K from which we can move to H:
         F[H] = max between F[H] and F[K] + 1
     max_F = max between result and F[H]
     denote H as 'rescued'
 the result is max_F
-```
+``
 
 The act of breaking the problem down and utilising the optimal solution of subproblems as above is called **dynamic programming**. With this algorithm, the solving performance will be much more consistent and the optimal solution will be quickly come up. However in practice, when the number of houses is not very huge, the exceptional heuristically-optimising and information-caching function of our brain when doing the greedy approach would usually be more effective. Therefore, you should spare this approach for larger data or when you want to make sure of the optimal solution.
 
@@ -105,13 +105,13 @@ Let $F_H = - X_H + VT_H$ and $G_H = X_H + VT_H$ for each house $H$. The above ob
 
 This new problem can now be solved by sorting houses by $F$ then $G$ values and applying any $O\left(N\log{N}\right)$ LIS (Longest Increasing Subsequence) algorithm such as binary search approach or data structure approach (segment tree, Fenwick tree, etc.) on $G$ values and vice versa.
 
-```
+``
 for each house H:
     F[H] = -X[H] + V * T[H]
     G[H] = X[H] + V * T[H]
 sort F, G of each house by F then G values
 the result is LIS(G) // longest increasing subsequence of G
-```
+``
 
 ## References
 - [Problem F. Tourist in the contest All-Ukrainian School Olympiad in Informatics](https://codeforces.com/contest/76/problem/F)
